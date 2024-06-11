@@ -10,10 +10,10 @@ unset($_SESSION['errors']);
 unset($_SESSION['formValues']);
 
 require_once 'db.php';
-require_once 'classes/Persoon.php';
+require_once 'classes/Nummer.php';
 
 // Haal alle personen op uit de database
-$personen = Persoon::getAll($db);
+$Nummers = Nummer::getAll($db);
 
 // Laad de view
-include 'views/index_view.php';
+include 'views/Nummer_view.php';
